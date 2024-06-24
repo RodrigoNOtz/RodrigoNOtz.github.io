@@ -1,13 +1,7 @@
 {
-  "icons": [
+  "icons": [    
     {
-        "src": "https://RodrigoNOtz.github.io/RodrigoNOtz.github.io/serpiente.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "any"
-    },
-    {
-        "src": "https://RodrigoNOtz.github.io/RodrigoNOtz.github.io/serpiente.png",
+        "src": "/serpiente.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "maskable"
@@ -16,11 +10,11 @@
 
   "background_color": "#ffffff",
   "dir": "ltr",
-  "display": "browser",
-  "name": "rodrigonotz.github",
+  "display": "fullscreen",
+  "name": "snake",
   "orientation": "any",
   "scope": "/",
-  "short_name": "rodrigonotz.github",
+  "short_name": "snake",
   "start_url": "/",
   "theme_color": "#ffffff"
 }
