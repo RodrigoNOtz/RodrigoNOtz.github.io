@@ -151,7 +151,7 @@ function showNotification(message) {
 // Vibration function with duration parameter
 function vibrateDevice(duration) {
     if ("vibrate" in navigator) {
-        navigator.vibrate(duration); // Vibrate for specified duration
+        navigator.vibrate([duration]); // Vibrate for specified duration
     } else {
         console.log("Vibration API is not supported in this browser.");
     }
