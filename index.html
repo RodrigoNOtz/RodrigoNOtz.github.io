@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SnakeGame</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <div>
+        <p id="high-score">High Score : 0</p>
+        <p id="score">Score : 0</p>
+    </div>
+    <input type="text" id="username" placeholder="Your Name">
+    <button onclick="save()">Save</button>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+              .then((reg) => {
+                console.log('Service Worker registrado correctamente', reg);
+              })
+              .catch((err) => {
+                console.error('Error al registrar el Service Worker', err);
+              });
+          });
+        }
+      </script>
+      
+</body>
+
+</html>
