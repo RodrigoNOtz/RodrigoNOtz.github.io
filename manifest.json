@@ -1,0 +1,11 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "browser",
+  "name": "rodrigonotz.github",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "rodrigonotz.github",
+  "start_url": "/",
+  "theme_color": "#ffffff"
+}
