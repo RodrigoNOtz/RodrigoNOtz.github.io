@@ -4,8 +4,8 @@ const highScoreElement = document.getElementById("high-score");
 const scoreElement = document.getElementById("score");
 
 const createRect = (x, y, width, height, color) => {
-    canvasContext.fillStyle = color
-    canvasContext.fillRect(x, y, width, height)
+    canvasContext.fillStyle = color;
+    canvasContext.fillRect(x, y, width, height);
 }
 
 const applePosition = () => {
@@ -66,6 +66,7 @@ const init = () => {
     // When snake eats apple
     if (snakeX === appleX && snakeY === appleY) {
         eat.play();
+        vibrateDevice(1000); // Vibrates the device for 1 second
         applePosition();
         snake.push([appleY, appleX]);
         score++;
@@ -147,10 +148,10 @@ function showNotification(message) {
     }
 }
 
-// Vibration function
-function vibrateDevice() {
+// Vibration function with duration parameter
+function vibrateDevice(duration) {
     if ("vibrate" in navigator) {
-        navigator.vibrate(200); // Vibrate for 200 milliseconds
+        navigator.vibrate(duration); // Vibrate for specified duration
     } else {
         console.log("Vibration API is not supported in this browser.");
     }
