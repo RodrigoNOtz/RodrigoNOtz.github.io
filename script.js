@@ -66,7 +66,7 @@ const init = () => {
     // When snake eats apple
     if (snakeX === appleX && snakeY === appleY) {
         eat.play();
-        vibrateDevice(1000); // Vibrates the device for 1 second
+        vibrateDevice(5000); // Vibrates the device for 1 second
         applePosition();
         snake.push([appleY, appleX]);
         score++;
