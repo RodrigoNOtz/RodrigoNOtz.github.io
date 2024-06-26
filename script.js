@@ -133,14 +133,14 @@ function showNotification(message) {
         if (Notification.permission === 'granted') {
             var notification = new Notification('Snake Game', {
                 body: message,
-                icon: 'snake-icon.png'
+                icon: 'serpiente.png'
             });
         } else if (Notification.permission !== 'denied') {
             Notification.requestPermission().then(function(permission) {
                 if (permission === 'granted') {
                     var notification = new Notification('Snake Game', {
                         body: message,
-                        icon: 'snake-icon.png'
+                        icon: 'serpiente.png'
                     });
                 }
             });
